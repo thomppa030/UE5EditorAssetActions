@@ -41,6 +41,7 @@ public class EditorAssetActions : ModuleRules
 				"UnrealEd",
 				"Blutility",
 				"UMG",
+				"GameplayAbilities",
 				"EditorScriptingUtilities",
 				// ... add private dependencies that you statically link with here ...	
 			}

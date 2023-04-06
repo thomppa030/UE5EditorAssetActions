@@ -4,10 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "AssetActionUtility.h"
+#include "Abilities/GameplayAbility.h"
 #include "Animation/AnimBlueprint.h"
 #include "Animation/AnimComposite.h"
 #include "Animation/AnimInstance.h"
 #include "Animation/AnimMontage.h"
+#include "Animation/AnimNotifies/AnimNotifyState.h"
 #include "Blueprint/UserWidget.h"
 #include "Materials/MaterialInstance.h"
 #include "Particles/ParticleSystem.h"
@@ -88,7 +90,12 @@ private:
 		{UTexture2D::StaticClass(), TEXT("T_")},
 		{UUserWidget::StaticClass(), TEXT("UW_")},
 		{UMorphTarget::StaticClass(), TEXT("MT_")},
-		{USkeletalMeshComponent::StaticClass(), TEXT("SK_")}
+		{USkeletalMeshComponent::StaticClass(), TEXT("SK_")},
+		{UGameplayAbility::StaticClass(), TEXT("BP_GA_")},
+		{UGameplayEffect::StaticClass(), TEXT("BP_GE_")},
+		{UAttributeSet::StaticClass(), TEXT("BP_AS_")},
+		{UAnimNotify::StaticClass(), TEXT("AN_")},
+		{UAnimNotifyState::StaticClass(), TEXT("ANS_")},
 	};
 
 	UFUNCTION()
