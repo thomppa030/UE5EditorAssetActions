@@ -26,6 +26,7 @@ public class EditorAssetActions : ModuleRules
 			new string[]
 			{
 				"Core",
+				"GameplayAbilities",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -41,7 +42,6 @@ public class EditorAssetActions : ModuleRules
 				"UnrealEd",
 				"Blutility",
 				"UMG",
-				"GameplayAbilities",
 				"EditorScriptingUtilities",
 				// ... add private dependencies that you statically link with here ...	
 			}
